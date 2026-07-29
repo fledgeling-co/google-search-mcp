@@ -11,7 +11,7 @@ You need a Google Gemini API key. Setup takes about five minutes and costs nothi
   "mcpServers": {
     "google-search": {
       "command": "npx",
-      "args": ["-y", "@fledgeling/google-search-mcp"],
+      "args": ["-y", "google-search-api-mcp"],
       "env": { "GEMINI_API_KEY": "paste-your-key-here" }
     }
   }

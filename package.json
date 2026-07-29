@@ -1,5 +1,5 @@
 {
-  "name": "@fledgeling/google-search-mcp",
+  "name": "google-search-api-mcp",
   "version": "0.1.0",
   "description": "Google Search as an MCP tool, grounded through the Gemini API. Real URLs, not redirects.",
   "type": "module",
