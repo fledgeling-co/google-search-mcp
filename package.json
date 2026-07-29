@@ -1,0 +1,29 @@
+{
+  "name": "google-search-mcp",
+  "version": "0.1.0",
+  "description": "Google Search as an MCP tool, grounded through the Gemini API. Real URLs, not redirects.",
+  "type": "module",
+  "engines": { "node": ">=20.11" },
+  "bin": { "google-search-mcp": "dist/index.js" },
+  "main": "dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "rm -rf dist && tsgo -p tsconfig.build.json",
+    "typecheck": "tsgo --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "gate": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": { "fastmcp": "^4.0.0", "zod": "^4.0.0" },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "@typescript/native-preview": "latest",
+    "eslint": "^9.0.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^4.0.0"
+  },
+  "license": "MIT"
+}
